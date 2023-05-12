@@ -1,0 +1,137 @@
+html {
+   background: url('/Volumes/COLLEGE/Spring 2023/interactive design 2/final-project/halo-page/images/homepage-bg.jpeg') no-repeat center center fixed;
+   background-size: cover;
+   overflow: hidden;
+
+}
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color:rgb(255, 255, 255);
+}
+/* Main Elements (image, body text, timeline) */
+.grid {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 10fr 18fr 5fr;
+    grid-gap: 2%;
+}
+.box {
+    background-color: rgba(0, 0, 0, 0.496);
+    padding: 2%;
+  }
+
+.a {
+    background-color: rgba(12, 215, 233, 0);
+    top: 30%;
+    left: 5%;
+    width: 5%;
+    position: fixed;
+}
+
+.b {
+    position: fixed;
+    top: 25vh;
+    left: 30vw;
+    width: 42vw;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.c {
+    height: 50%;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    top: 20%;
+    left: 80%;
+    position: absolute;
+}
+
+/* Body Text Style*/
+
+.title {
+    font-weight: bold;
+    padding-bottom: 1%;
+    }
+    .medium{
+      padding-top: 1%;
+      font-size: 30px;  
+    }
+    .large{
+        font-size: 50px;
+
+    }
+p{
+    font-size: 30px;
+    line-height: 45px;
+}
+    
+/* Timeline Style*/
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 2vw;
+    top:75%;
+ }
+ li{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 200%;
+ }
+.homepage{
+    width:15vw;
+    margin-bottom: 5%;
+}
+.hover:hover{
+    background-color: rgba(53, 187, 205, 0.609);
+    border-style: solid;
+    border-width: 0px 5px 0px 5px;
+    border-color: rgb(53, 187, 205);
+    animation-name: flick;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+a:link{
+    /* color:darkgray; */
+    text-decoration: none;
+}
+.camp, .halo1, .halo2, .halo3, .halo4, .halo5{
+    color: rgb(225, 224, 224);
+    
+}
+@keyframes flick {
+    0%    { opacity: 1; }
+    25%   { opacity: .5; }
+    30%   { opacity: .25; }
+    80%   { opacity: .50; }
+    100%  { opacity: 1; }
+}
+/* Images */
+
+.guilt{
+    width: 300%;
+}
+.brick{
+    width: 400%;
+}
+.case{
+    width: 300%;
+}
+/* Guilty Spark following mouse and hovering (css animation 1, hover animation) */
+
+#guiltfollow{
+    width: 35%;
+}
+.guiltyfollow{
+    width:100px;
+    transform: translateY(-10%);
+    animation: floater 1.5s infinite;
+    transition: ease 0.2s;
+}
+@keyframes floater {
+    0%{transform: translateY(-10%);transition: ease 0.2s;}
+    50%{transform: translateY(10%);transition: ease 0.2s;}
+}
+
+
